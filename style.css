@@ -1,0 +1,272 @@
+:root {
+  /* =========================== Farver ===========================*/
+  --primary: #007e91ce;
+  --secondary: #32555cc5;
+  --tertiary: #e0d1d4;
+  --accent_light: #e7eaef;
+  --accent_dark: #9f9fa0;
+  --white: #fff;
+  --black: #000;
+
+  /* =========================== Spacing ===========================*/
+  /* Mobile Spaacing */
+  --small_spacing: 0.5rem;
+  --medium_spacing: 1rem;
+  --large_spacing: 1.5rem;
+  --x-large_spacing: 2rem;
+}
+
+/* =========================== Fonte ===========================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+body,
+p,
+label,
+form {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+/* =========================== Overskrifter ===========================*/
+
+h1 {
+  font-family: "font-family: 'Cookie', cursive;";
+  font-size: 2.5rem;
+  padding-bottom: var(--large_spacing);
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding-bottom: var(--large_spacing);
+}
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding-bottom: var(--large_spacing);
+}
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding-bottom: var(--large_spacing);
+}
+a {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* =========================== Section ===========================*/
+section {
+  padding-bottom: var(--large_spacing);
+}
+/* =========================== Menu ===========================*/
+/* =========================== Burgermenu ===========================*/
+header {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0 1rem;
+  grid-column: 1/-1;
+  z-index: 20;
+}
+
+header .logo {
+  width: 10rem;
+}
+
+header .logo_mobile {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+header .logo_desktop {
+  display: none;
+}
+
+.burger_menu {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+
+  top: 0;
+  right: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 10;
+}
+
+#section_1 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: url(pictures/splash.jpg),
+    linear-gradient(to left, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0));
+  background-size: 130%;
+  background-position: -8rem -5rem;
+  height: 15rem;
+  place-content: center end;
+
+  margin-top: var(--x-large_spacing);
+}
+
+#section_1 .overskrift_container {
+  position: relative;
+  z-index: 0;
+  margin-left: 40px;
+  padding: 2rem;
+}
+#section_1 .overskrift_container h1 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* =========================== Footer ===========================*/
+footer {
+  grid-column: 1/-1;
+  width: 100%;
+  height: auto;
+  background: var(--primary);
+  padding: var(--medium_spacing);
+
+  color: var(--black);
+}
+footer div,
+p {
+  padding: 15px;
+}
+
+footer p,
+a {
+  color: var(--black);
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer .three_links {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+/* =========================== Mediaqueries ===========================*/
+@media screen and (min-width: 600px) {
+  /* =========================== Footer ===========================*/
+  footer {
+    padding-inline: 8rem !important;
+    padding-top: 4rem !important;
+  }
+  /* .footer_wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    gap: 0 4rem;
+  } */
+
+  /* =========================== Menu ===========================*/
+  /* =========================== Burgermenu ===========================*/
+
+  header .logo {
+    margin: 2rem 5rem;
+    width: 12rem;
+  }
+
+  header .logo {
+    width: 15rem;
+  }
+
+  header .logo_mobile {
+    display: none;
+  }
+  header .logo_desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .burger_menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  nav ul {
+    position: static;
+    height: auto;
+    width: 100%;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+
+    transition: all 0.3s;
+    transform-origin: left;
+
+    padding: 0;
+  }
+
+  nav ul li {
+    position: relative;
+    margin-bottom: 0;
+  }
+  nav ul li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background: #4b4b4b;
+
+    transition: transform 0.3s;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  nav ul li a {
+    color: #4b4b4b;
+    font-size: 1rem;
+  }
+  nav ul li:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  nav ul.openMenu {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 5;
+  }
+
+  .hidden {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
