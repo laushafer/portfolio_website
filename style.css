@@ -1,6 +1,6 @@
 :root {
   /* =========================== Farver ===========================*/
-  --primary: #007e91ce;
+  --primary: #007e91;
   --secondary: #32555cc5;
   --tertiary: #e0d1d4;
   --accent_light: #e7eaef;
@@ -32,7 +32,7 @@ label,
 form {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
-  line-height: 1.7rem;
+  line-height: 2.5rem;
 }
 
 /* =========================== Overskrifter ===========================*/
@@ -57,7 +57,7 @@ h3 {
 h4 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding-bottom: var(--large_spacing);
 }
 a {
@@ -75,13 +75,20 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem 0 1rem;
+  padding: 2rem 0.2rem 8px 0rem;
   grid-column: 1/-1;
-  z-index: 20;
+  /* z-index: 30; */
 }
 
 header .logo {
-  width: 10rem;
+  font-family: "Cookie", cursive;
+  font-size: 4rem;
+  color: #007e91;
+  margin-left: 5%;
+}
+
+header .logo a {
+  width: auto;
 }
 
 header .logo_mobile {
@@ -109,29 +116,93 @@ header .logo_desktop {
   z-index: 10;
 }
 
-#section_1 {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background: url(pictures/splash.jpg),
-    linear-gradient(to left, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0));
-  background-size: 130%;
-  background-position: -8rem -5rem;
-  height: 15rem;
-  place-content: center end;
+.stroke {
+  position: absolute;
+  top: calc(50%);
+  left: 0;
+  height: 0.3rem;
+  width: 3rem;
+  background: black;
 
-  margin-top: var(--x-large_spacing);
+  border-radius: 999px;
+  pointer-events: none;
+
+  transition: all 0.3s;
+}
+
+.burger_menu .stroke_top {
+  transform: translateY(-1rem);
+}
+.burger_menu .stroke_center {
+  transform: translateY(-0.2rem);
+}
+.burger_menu .stroke_bottom {
+  transform: translateY(0.5rem);
+}
+
+.burger_menu .stroke_top.openMenu {
+  transform: rotate(45deg);
+}
+.burger_menu .stroke_center.openMenu {
+  transform: translateX(5rem);
+  opacity: 0;
+}
+.burger_menu .stroke_bottom.openMenu {
+  transform: rotate(-45deg);
+}
+
+nav ul {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #007e91;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 3rem;
+}
+
+nav ul.openMenu {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 5;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#section_1 {
+  display: grid;
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100vh;
+  background-image: url(pictures/splash.jpg);
+  background-size: cover;
+  background-position: 98% 10%;
+  margin-bottom: 80px;
+  place-content: center;
 }
 
 #section_1 .overskrift_container {
-  position: relative;
   z-index: 0;
-  margin-left: 40px;
-  padding: 2rem;
+  margin-top: -17rem;
 }
-#section_1 .overskrift_container h1 {
-  position: relative;
-  font-size: 2rem;
+#section_1 .overskrift_container h2 {
+  font-size: 3rem;
   font-weight: 300;
   color: var(--white);
   text-align: center;
@@ -143,33 +214,24 @@ footer {
   grid-column: 1/-1;
   width: 100%;
   height: auto;
-  background: var(--primary);
+  background: var(--tertiary);
   padding: var(--medium_spacing);
 
   color: var(--black);
 }
 footer div,
-p {
+h4 {
   padding: 15px;
+  font-size: 1.3rem;
 }
 
-footer p,
-a {
-  color: var(--black);
-}
-
-footer a {
-  text-decoration: underline;
-}
-
-footer .three_links {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-}
 /* =========================== Mediaqueries ===========================*/
 @media screen and (min-width: 600px) {
   /* =========================== Footer ===========================*/
+  #section_1 .overskrift_container {
+    margin-left: -32rem;
+  }
+
   footer {
     padding-inline: 8rem !important;
     padding-top: 4rem !important;
@@ -189,20 +251,8 @@ footer .three_links {
   header .logo {
     margin: 2rem 5rem;
     width: 12rem;
-  }
-
-  header .logo {
-    width: 15rem;
-  }
-
-  header .logo_mobile {
-    display: none;
-  }
-  header .logo_desktop {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0;
+    font: cookie;
+    color: #007e91;
   }
 
   .burger_menu {
@@ -229,7 +279,7 @@ footer .three_links {
     transition: all 0.3s;
     transform-origin: left;
 
-    padding: 0;
+    padding: 1.5rem;
   }
 
   nav ul li {
@@ -252,7 +302,7 @@ footer .three_links {
 
   nav ul li a {
     color: #4b4b4b;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   nav ul li:hover::after {
     transform-origin: left;
