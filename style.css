@@ -32,7 +32,7 @@ label,
 form {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
 }
 
 /* =========================== Overskrifter ===========================*/
@@ -75,7 +75,7 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0.2rem 8px 0rem;
+  padding: 2rem 0.3rem 2rem 1rem;
   grid-column: 1/-1;
   /* z-index: 30; */
 }
@@ -85,19 +85,6 @@ header .logo {
   font-size: 4rem;
   color: #007e91;
   margin-left: 5%;
-}
-
-header .logo a {
-  width: auto;
-}
-
-header .logo_mobile {
-  width: 100%;
-  height: auto;
-  padding: 0;
-}
-header .logo_desktop {
-  display: none;
 }
 
 .burger_menu {
@@ -209,6 +196,23 @@ nav ul.openMenu {
   padding: 0.5rem;
 }
 
+.h2_wrapper {
+  margin-left: 1.6rem;
+}
+
+#section_1 .overskrift_container {
+  margin-left: -32rem;
+}
+#om_mig_section_1 {
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+#om_mig_section_1 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+}
+
 /* =========================== Footer ===========================*/
 footer {
   grid-column: 1/-1;
@@ -228,30 +232,26 @@ h4 {
 /* =========================== Mediaqueries ===========================*/
 @media screen and (min-width: 600px) {
   /* =========================== Footer ===========================*/
-  #section_1 .overskrift_container {
-    margin-left: -32rem;
-  }
 
   footer {
     padding-inline: 8rem !important;
     padding-top: 4rem !important;
   }
-  /* .footer_wrapper {
+
+  /* =========================== Sections ===========================*/
+
+  #om_mig_section_1 .section_wrapper {
+    background-color: var(--accent_light);
     display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
-    gap: 0 4rem;
-  } */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   /* =========================== Menu ===========================*/
   /* =========================== Burgermenu ===========================*/
 
   header .logo {
-    margin: 2rem 5rem;
-    width: 12rem;
-    font: cookie;
+    margin: auto;
+    font: cookie, cursive;
     color: #007e91;
   }
 
@@ -264,6 +264,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     width: 80vw;
+    margin-right: -9rem;
   }
 
   nav ul {
