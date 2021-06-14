@@ -75,7 +75,7 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0.3rem 2rem 1rem;
+  padding: 3rem 0.3rem 4rem 0.5rem;
   grid-column: 1/-1;
   /* z-index: 30; */
 }
@@ -321,6 +321,18 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
+#tema6_section_1 .section_wrapper {
+  background-color: var(--tertiary);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema6_section_2 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
 #portfolio_section_1 .box_1 {
   background: url(tema_pics/tema1.jpg);
   background-size: cover;
@@ -357,13 +369,19 @@ nav ul.openMenu {
   background-position: center;
 }
 
-#portfolio_section_1 .box {
+#portfolio_section_1 .box_container {
   width: 100%;
-  padding-top: 50%;
-  padding-bottom: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  justify-content: normal;
+  gap: 2rem;
+}
+
+#portfolio_section_1 .box_container a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.7 rem;
+  color: #007e91;
 }
 
 /* =========================== Footer ===========================*/
@@ -459,6 +477,16 @@ h4 {
   }
 
   #tema5_section_3 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema6_section_1 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema6_section_2 .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
