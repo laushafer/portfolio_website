@@ -32,7 +32,11 @@ label,
 form {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
-  line-height: 2.7rem;
+  line-height: 1.5rem;
+}
+
+p {
+  padding: 20px;
 }
 
 /* =========================== Overskrifter ===========================*/
@@ -40,25 +44,26 @@ form {
 h1 {
   font-family: "font-family: 'Cookie', cursive;";
   font-size: 2.5rem;
-  padding-bottom: var(--large_spacing);
+  padding: 20px;
 }
 h2 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
-  padding-bottom: var(--large_spacing);
+  padding: 20px;
+  padding-bottom: 40px;
 }
 h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
-  padding-bottom: var(--large_spacing);
+  padding: 20px;
 }
 h4 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
-  padding-bottom: var(--large_spacing);
+  padding: 20px;
 }
 a {
   font-family: "Quicksand", sans-serif;
@@ -201,7 +206,7 @@ nav ul.openMenu {
 }
 
 #section_1 .overskrift_container {
-  margin-left: -32rem;
+  margin-left: -1rem;
 }
 #om_mig_section_1 {
   margin-bottom: 3rem;
@@ -215,9 +220,10 @@ nav ul.openMenu {
 }
 
 #tema1_section_1 .section_wrapper {
-  background-color: var(--tertiary);
+  background-color: var(--primary);
   margin-bottom: 1.5rem;
   column-gap: 2rem;
+  color: white;
 }
 
 #tema2_section_1 .section_wrapper {
@@ -236,6 +242,7 @@ nav ul.openMenu {
   background-color: var(--primary);
   margin-bottom: 1.5rem;
   column-gap: 2rem;
+  color: white;
 }
 
 #tema2_section_2 .col1_img {
@@ -245,9 +252,10 @@ nav ul.openMenu {
 }
 
 #tema3_section_1 .section_wrapper {
-  background-color: var(--accent_light);
+  background-color: var(--primary);
   margin-bottom: 1.5rem;
   column-gap: 2rem;
+  color: white;
 }
 
 #tema3_section_2 .section_wrapper {
@@ -262,25 +270,20 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
-#tema3_section_2 .col2 {
+#tema3_section_2 .col2_img {
   background: url(billed_dokumentation/tema_3/prototype.png);
   background-size: cover;
   background-position: center;
 }
 
-#tema3_section_3 .col4 {
+#tema3_section_3 .col1_img {
   background: url(billed_dokumentation/tema_3/pitch.png);
   background-size: cover;
   background-position: center;
 }
 
-#tema3_section_3 .col5 {
+#tema3_section_3 .col2_img {
   background: url(billed_dokumentation/tema_3/pitch1.png);
-  background-size: cover;
-  background-position: center;
-}
-#tema3_section_3 .col6 {
-  background: url(billed_dokumentation/tema_3/pitch2.png);
   background-size: cover;
   background-position: center;
 }
@@ -396,8 +399,9 @@ footer {
 }
 footer div,
 h4 {
-  padding: 15px;
-  font-size: 1.3rem;
+  padding: 20px;
+  font-size: 1.1rem;
+  padding-top: 30px;
 }
 
 /* =========================== Mediaqueries ===========================*/
@@ -443,12 +447,12 @@ h4 {
 
   #tema3_section_2 .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #tema3_section_3 .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   #tema4_section_1 .section_wrapper {
