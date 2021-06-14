@@ -379,11 +379,6 @@ nav ul.openMenu {
   display: grid;
   justify-content: normal;
   gap: 2rem;
-}
-
-#portfolio_section_1 .box_container a {
-  font-family: "Quicksand", sans-serif;
-  font-size: 2.7 rem;
   color: #007e91;
 }
 
