@@ -211,6 +211,12 @@ nav ul.openMenu {
 #om_mig_section_1 .section_wrapper {
   background-color: var(--accent_light);
   margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#portfolio_section_1 .section_wrapper img {
+  width: 300px;
+  height: 300px;
 }
 
 /* =========================== Footer ===========================*/
