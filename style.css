@@ -311,6 +311,13 @@ nav ul.openMenu {
   margin-bottom: 1.5rem;
   column-gap: 2rem;
 }
+#tema5_section_1 .col2 {
+  margin: 6rem;
+}
+
+#tema5_section_1 .col3 {
+  margin: 4rem 1rem 2rem 2rem;
+}
 
 #tema5_section_2 .section_wrapper {
   background-color: var(--tertiary);
@@ -322,6 +329,10 @@ nav ul.openMenu {
   background-color: var(--accent_light);
   margin-bottom: 1.5rem;
   column-gap: 2rem;
+}
+
+#tema5_section_2 .col3 {
+  margin: -3.5rem 2rem 2rem 2rem;
 }
 
 #tema6_section_1 .section_wrapper {
@@ -394,7 +405,6 @@ footer {
 }
 footer div,
 h4 {
-  padding: 20px;
   font-size: 1.1rem;
   padding-top: 30px;
 }
