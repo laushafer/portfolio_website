@@ -1,6 +1,6 @@
 :root {
   /* =========================== Farver ===========================*/
-  --primary: #007e91;
+  --primary: #007e91c9;
   --secondary: #32555cc5;
   --tertiary: #e0d1d4;
   --accent_light: #e7eaef;
@@ -214,9 +214,120 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
-#portfolio_section_1 .section_wrapper img {
-  width: 300px;
-  height: 300px;
+#tema1_section_1 .section_wrapper {
+  background-color: var(--tertiary);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema2_section_1 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema2_section_1 .col2 {
+  background: url(billed_dokumentation/tema_2/forside.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#tema2_section_2 .section_wrapper {
+  background-color: var(--primary);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema2_section_2 .col1_img {
+  background: url(billed_dokumentation/tema_2/styletile.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#tema3_section_1 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema3_section_2 .section_wrapper {
+  background-color: var(--tertiary);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema3_section_3 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema3_section_2 .col2 {
+  background: url(billed_dokumentation/tema_3/prototype.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#tema3_section_3 .col4 {
+  background: url(billed_dokumentation/tema_3/pitch.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#tema3_section_3 .col5 {
+  background: url(billed_dokumentation/tema_3/pitch1.png);
+  background-size: cover;
+  background-position: center;
+}
+#tema3_section_3 .col6 {
+  background: url(billed_dokumentation/tema_3/pitch2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box_1 {
+  background: url(tema_pics/tema1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box_2 {
+  background: url(tema_pics/tema2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box_3 {
+  background: url(tema_pics/tema3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box_4 {
+  background: url(tema_pics/tema4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box_5 {
+  background: url(tema_pics/tema5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box_6 {
+  background: url(tema_pics/tema_6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio_section_1 .box {
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =========================== Footer ===========================*/
@@ -247,11 +358,44 @@ h4 {
   /* =========================== Sections ===========================*/
 
   #om_mig_section_1 .section_wrapper {
-    background-color: var(--accent_light);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  #portfolio_section_1 .box_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  #tema1_section_1 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema2_section_1 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema2_section_2 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema3_section_1 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema3_section_2 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema3_section_3 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   /* =========================== Menu ===========================*/
   /* =========================== Burgermenu ===========================*/
 
