@@ -303,6 +303,24 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
+#tema5_section_1 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema5_section_2 .section_wrapper {
+  background-color: var(--tertiary);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
+#tema5_section_3 .section_wrapper {
+  background-color: var(--accent_light);
+  margin-bottom: 1.5rem;
+  column-gap: 2rem;
+}
+
 #portfolio_section_1 .box_1 {
   background: url(tema_pics/tema1.jpg);
   background-size: cover;
@@ -429,6 +447,22 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  #tema5_section_1 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #tema5_section_2 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tema5_section_3 .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   /* =========================== Menu ===========================*/
   /* =========================== Burgermenu ===========================*/
 
