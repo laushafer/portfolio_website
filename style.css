@@ -69,6 +69,13 @@ a {
   font-family: "Quicksand", sans-serif;
 }
 
+#portfolio_section_1 a {
+  font-size: 2.5rem;
+  color: #007e91;
+  text-align: center;
+  padding: 2rem;
+}
+
 /* =========================== Section ===========================*/
 section {
   padding-bottom: var(--large_spacing);
@@ -201,6 +208,10 @@ nav ul.openMenu {
   padding: 0.5rem;
 }
 
+#tema1_section_1 .col2 {
+  padding: 2rem;
+}
+
 .h2_wrapper {
   margin-left: 1.6rem;
 }
@@ -232,10 +243,12 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
-#tema2_section_1 .col2 {
-  background: url(billed_dokumentation/tema_2/forside.png);
-  background-size: cover;
-  background-position: center;
+#tema2_section_1 .col2 img {
+  margin: 6rem;
+}
+
+#tema2_section_2 .col1 img {
+  margin: 1rem 1rem 1rem 2rem;
 }
 
 #tema2_section_2 .section_wrapper {
@@ -243,12 +256,6 @@ nav ul.openMenu {
   margin-bottom: 1.5rem;
   column-gap: 2rem;
   color: white;
-}
-
-#tema2_section_2 .col1_img {
-  background: url(billed_dokumentation/tema_2/styletile.png);
-  background-size: cover;
-  background-position: center;
 }
 
 #tema3_section_1 .section_wrapper {
@@ -270,22 +277,12 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
-#tema3_section_2 .col2_img {
-  background: url(billed_dokumentation/tema_3/prototype.png);
-  background-size: cover;
-  background-position: center;
+#tema3_section_2 img {
+  margin: 2rem 2rem;
 }
 
-#tema3_section_3 .col1_img {
-  background: url(billed_dokumentation/tema_3/pitch.png);
-  background-size: cover;
-  background-position: center;
-}
-
-#tema3_section_3 .col2_img {
-  background: url(billed_dokumentation/tema_3/pitch1.png);
-  background-size: cover;
-  background-position: center;
+#tema3_section_3 img {
+  margin: 2rem 2rem;
 }
 
 #tema4_section_1 .section_wrapper {
@@ -306,6 +303,14 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
+#tema4_section_2 img {
+  margin: 2rem 3rem;
+}
+
+#tema4_section_3 img {
+  margin: 2rem 3rem;
+}
+
 #tema5_section_1 .section_wrapper {
   background-color: var(--accent_light);
   margin-bottom: 1.5rem;
@@ -319,7 +324,7 @@ nav ul.openMenu {
   margin: 4rem 1rem 2rem 2rem;
 }
 
-#tema5_section_2 .section_wrapper {
+#tema5_section_2 .section_wrapper_pink {
   background-color: var(--tertiary);
   margin-bottom: 1.5rem;
   column-gap: 2rem;
@@ -327,12 +332,24 @@ nav ul.openMenu {
 
 #tema5_section_3 .section_wrapper {
   background-color: var(--accent_light);
-  margin-bottom: 1.5rem;
   column-gap: 2rem;
 }
 
 #tema5_section_2 .col3 {
-  margin: -3.5rem 2rem 2rem 2rem;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+#tema5_section_3 img {
+  margin: 0rem 2rem 2rem 5rem;
+}
+
+#tema6_section_1 .col2 {
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+#tema6_section_2 img {
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 #tema6_section_1 .section_wrapper {
@@ -347,50 +364,57 @@ nav ul.openMenu {
   column-gap: 2rem;
 }
 
+#tema6_section_3 {
+  text-align: center;
+}
+
 #portfolio_section_1 .box_1 {
   background: url(tema_pics/tema1.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 
 #portfolio_section_1 .box_2 {
-  background: url(tema_pics/tema2.jpg);
-  background-size: cover;
+  background: url(tema_pics/tema_20.jpg);
+  background-size: 100%;
   background-position: center;
 }
 
 #portfolio_section_1 .box_3 {
-  background: url(tema_pics/tema3.png);
-  background-size: cover;
+  background: url(tema_pics/tema_3.png);
+  background-size: 100%;
   background-position: center;
 }
 
 #portfolio_section_1 .box_4 {
   background: url(tema_pics/tema4.png);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 
 #portfolio_section_1 .box_5 {
-  background: url(tema_pics/tema5.png);
-  background-size: cover;
+  background: url(tema_pics/tema5.jpg);
+  background-size: 100%;
   background-position: center;
 }
 
 #portfolio_section_1 .box_6 {
   background: url(tema_pics/tema_6.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 
 #portfolio_section_1 .box_container {
   width: 100%;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 9%;
   display: grid;
   justify-content: normal;
   gap: 2rem;
-  color: #007e91;
+}
+
+.box a {
+  background-color: white;
 }
 
 /* =========================== Footer ===========================*/
@@ -452,7 +476,7 @@ h4 {
 
   #tema3_section_2 .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   #tema3_section_3 .section_wrapper {
@@ -573,5 +597,79 @@ h4 {
   .hidden {
     opacity: 1;
     pointer-events: all;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tema1_section_1 iframe {
+    width: auto;
+    padding: 1rem;
+  }
+
+  #tema2_section_1 img {
+    width: auto;
+    padding: 3rem;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #tema2_section_2 img {
+    width: auto;
+    padding: 2rem;
+  }
+
+  #tema3_section_2 img {
+    width: auto;
+    padding: 1rem;
+  }
+
+  #tema3_section_3 img {
+    width: auto;
+    padding: 1rem;
+    margin-left: 15px;
+  }
+
+  #tema4_section_2 img {
+    width: auto;
+    padding: 4rem;
+    margin-left: 0;
+  }
+  #tema4_section_3 img {
+    width: auto;
+    padding: 4rem;
+    margin-left: 0;
+  }
+  #tema5_section_1 img {
+    width: auto;
+    margin: 2rem;
+  }
+
+  #tema5_section_2 img {
+    width: auto;
+    margin: 1rem;
+  }
+
+  #tema5_section_3 img {
+    width: auto;
+    margin: 2rem;
+    padding-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  #tema6_section_1 img {
+    width: auto;
+    padding: 6rem;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  #tema6_section_2 img {
+    width: auto;
+    padding: 4rem;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
